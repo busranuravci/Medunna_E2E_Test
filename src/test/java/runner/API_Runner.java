@@ -8,12 +8,15 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        features="src/test/resources/endtoend_features",
+        features="src/test/resources",
         glue= {"stepDefinitions","hooks"},
-        tags= "@database",
+        tags= "@e2e",
         dryRun= false
 )
 
 
-public class Runner {
+public class API_Runner {
 }
+
+
+// cross browser test --> farklı browserlar da yaptığımız tes
